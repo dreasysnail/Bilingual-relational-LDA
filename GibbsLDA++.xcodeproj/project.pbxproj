@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		780D347319DC59D200F1EF6C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 780D347219DC59D200F1EF6C /* main.cpp */; };
-		780D347519DC59D200F1EF6C /* GibbsLDA__.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 780D347419DC59D200F1EF6C /* GibbsLDA__.1 */; };
+		780D348519DC59F500F1EF6C /* dataset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 780D347B19DC59F500F1EF6C /* dataset.cpp */; };
+		780D348619DC59F500F1EF6C /* lda.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 780D347C19DC59F500F1EF6C /* lda.cpp */; };
+		780D348719DC59F500F1EF6C /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 780D347D19DC59F500F1EF6C /* model.cpp */; };
+		780D348819DC59F500F1EF6C /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 780D347E19DC59F500F1EF6C /* utils.cpp */; };
+		780D348919DC59F500F1EF6C /* strtokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 780D347F19DC59F500F1EF6C /* strtokenizer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +21,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				780D347519DC59D200F1EF6C /* GibbsLDA__.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -26,8 +28,16 @@
 
 /* Begin PBXFileReference section */
 		780D346F19DC59D200F1EF6C /* GibbsLDA++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "GibbsLDA++"; sourceTree = BUILT_PRODUCTS_DIR; };
-		780D347219DC59D200F1EF6C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		780D347419DC59D200F1EF6C /* GibbsLDA__.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = GibbsLDA__.1; sourceTree = "<group>"; };
+		780D347B19DC59F500F1EF6C /* dataset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dataset.cpp; sourceTree = "<group>"; };
+		780D347C19DC59F500F1EF6C /* lda.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lda.cpp; sourceTree = "<group>"; };
+		780D347D19DC59F500F1EF6C /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
+		780D347E19DC59F500F1EF6C /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		780D347F19DC59F500F1EF6C /* strtokenizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = strtokenizer.cpp; sourceTree = "<group>"; };
+		780D348019DC59F500F1EF6C /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		780D348119DC59F500F1EF6C /* dataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataset.h; sourceTree = "<group>"; };
+		780D348219DC59F500F1EF6C /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		780D348319DC59F500F1EF6C /* strtokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strtokenizer.h; sourceTree = "<group>"; };
+		780D348419DC59F500F1EF6C /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,16 @@
 		780D346619DC59D200F1EF6C = {
 			isa = PBXGroup;
 			children = (
+				780D347B19DC59F500F1EF6C /* dataset.cpp */,
+				780D347C19DC59F500F1EF6C /* lda.cpp */,
+				780D347D19DC59F500F1EF6C /* model.cpp */,
+				780D347E19DC59F500F1EF6C /* utils.cpp */,
+				780D347F19DC59F500F1EF6C /* strtokenizer.cpp */,
+				780D348019DC59F500F1EF6C /* constants.h */,
+				780D348119DC59F500F1EF6C /* dataset.h */,
+				780D348219DC59F500F1EF6C /* model.h */,
+				780D348319DC59F500F1EF6C /* strtokenizer.h */,
+				780D348419DC59F500F1EF6C /* utils.h */,
 				780D347119DC59D200F1EF6C /* GibbsLDA++ */,
 				780D347019DC59D200F1EF6C /* Products */,
 			);
@@ -60,8 +80,6 @@
 		780D347119DC59D200F1EF6C /* GibbsLDA++ */ = {
 			isa = PBXGroup;
 			children = (
-				780D347219DC59D200F1EF6C /* main.cpp */,
-				780D347419DC59D200F1EF6C /* GibbsLDA__.1 */,
 			);
 			path = "GibbsLDA++";
 			sourceTree = "<group>";
@@ -117,7 +135,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				780D347319DC59D200F1EF6C /* main.cpp in Sources */,
+				780D348519DC59F500F1EF6C /* dataset.cpp in Sources */,
+				780D348619DC59F500F1EF6C /* lda.cpp in Sources */,
+				780D348719DC59F500F1EF6C /* model.cpp in Sources */,
+				780D348819DC59F500F1EF6C /* utils.cpp in Sources */,
+				780D348919DC59F500F1EF6C /* strtokenizer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

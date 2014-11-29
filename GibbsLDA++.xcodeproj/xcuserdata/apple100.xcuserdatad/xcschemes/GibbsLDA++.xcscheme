@@ -57,6 +57,12 @@
             ReferencedContainer = "container:GibbsLDA++.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-est -alpha 0.1 -beta 0.1 -ntopics 10 -niters 100 -savestep 200 -twords 20 -dfile train.txt"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
